@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+main {
+  font-family: "Special Elite";
+  width: 90%;
+  background: #D8D8D8;
+  margin: 0 auto; }
+
+header {
+  text-align: center; }
+  header h1 {
+    padding: 1em 0 0;
+    font-size: 2.5em; }
+  header p {
+    padding: 0.5em;
+    font-size: 1.2em; }
+
+h2,
+h3 {
+  text-align: center;
+  padding: 1em 0; }
+
+h2 {
+  text-decoration: underline; }
+
+#img-div {
+  margin: 0 auto;
+  width: 90%; }
+  #img-div figure img {
+    max-width: 200%;
+    width: 100%;
+    height: auto; }
+  #img-div figure figcaption {
+    text-align: right;
+    padding: 0.5em; }
+
+#tribute-info {
+  padding-bottom: 3em; }
+  #tribute-info #bio {
+    padding-bottom: 1em; }
+    #tribute-info #bio #left {
+      width: 30%;
+      padding: 0 0.5em;
+      float: left; }
+    #tribute-info #bio #right {
+      width: 70%;
+      padding: 0 1em;
+      border-left: 3px solid #f0f0f0;
+      text-align: justify;
+      float: left; }
+    #tribute-info #bio:after, #tribute-info #bio:before {
+      content: "";
+      display: block; }
+    #tribute-info #bio:after {
+      clear: both; }
+  #tribute-info .col {
+    width: 33%;
+    padding: 1em;
+    float: left; }
+    #tribute-info .col ul {
+      /* Prevent nested li's from getting messed up */ }
+      #tribute-info .col ul {
+        list-style: none;
+        padding-left: 0; }
+      #tribute-info .col ul > li {
+        margin-left: 15px; }
+      #tribute-info .col ul > li:before {
+        content: "--";
+        margin-left: -15px; }
+      #tribute-info .col ul li {
+        line-height: 1.2em; }
+  #tribute-info:after, #tribute-info:before {
+    content: "";
+    display: block; }
+  #tribute-info:after {
+    clear: both; }
+
+footer {
+  line-height: 4em;
+  font-size: small;
+  text-align: center;
+  vertical-align: middle; }
+  footer img {
+    max-width: 1em;
+    height: auto; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,106 @@
+@import 'vars';
+@import 'mixins';
+
+* {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: $font;
+  width      : 90%;
+  background : $background;
+  margin     : 0 auto;
+}
+
+header {
+  text-align: center;
+
+  h1 {
+    padding  : 1em 0 0;
+    font-size: 2.5em;
+  }
+
+  p {
+    padding  : 0.5em;
+    font-size: 1.2em;
+  }
+}
+
+h2,
+h3 {
+  text-align: center;
+  padding   : 1em 0;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#img-div {
+  margin: 0 auto;
+  width : 90%;
+
+  figure {
+    img {
+      max-width: 200%;
+      width    : 100%;
+      height   : auto;
+    }
+
+    figcaption {
+      text-align: right;
+      padding   : 0.5em;
+    }
+  }
+}
+
+#tribute-info {
+  #bio {
+    padding-bottom: 1em;
+
+    #left {
+      width  : 30%;
+      padding: 0 0.5em;
+      float  : left;
+    }
+
+    #right {
+      width      : 70%;
+      padding    : 0 1em;
+      border-left: 3px solid #f0f0f0;
+      text-align : justify;
+      float      : left;
+    }
+    @include clrFix;
+  }
+
+  .col {
+    width  : 33%;
+    padding: 1em;
+    float  : left;
+
+    ul {
+      @include replaceBullets( '--');
+
+      li {
+        line-height: 1.2em;
+      }
+    }
+  }
+  padding-bottom: 3em;
+  @include clrFix;
+}
+
+footer {
+  line-height   : 4em;
+  font-size     : small;
+  text-align    : center;
+  vertical-align: middle;
+
+  img {
+    max-width: 1em;
+    height   : auto;
+  }
+}

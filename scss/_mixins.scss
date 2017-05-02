@@ -1,0 +1,26 @@
+@mixin clrFix {
+  &:after,
+  &:before {
+    content: "";
+    display: block;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+@mixin replaceBullets($char) {
+  & {
+    list-style  : none;
+    padding-left: 0;
+  }
+
+  & > li {
+    margin-left: 15px;
+  }
+  /* Prevent nested li's from getting messed up */
+  & > li:before {
+    content    : "#{$char}";
+    margin-left: -15px;
+  }
+}
