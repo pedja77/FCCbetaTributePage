@@ -37,45 +37,45 @@ h2 {
     text-align: right;
     padding: 0.5em; }
 
-#tribute-info {
+#tribute-info #bio {
+  padding-bottom: 1em; }
+  #tribute-info #bio #left {
+    width: 30%;
+    padding: 0 0.5em;
+    float: left; }
+  #tribute-info #bio #right {
+    width: 70%;
+    padding: 0 1em;
+    border-left: 3px solid #f0f0f0;
+    text-align: justify;
+    float: left; }
+  #tribute-info #bio:after, #tribute-info #bio:before {
+    content: "";
+    display: block; }
+  #tribute-info #bio:after {
+    clear: both; }
+#tribute-info #bibliography {
   padding-bottom: 3em; }
-  #tribute-info #bio {
-    padding-bottom: 1em; }
-    #tribute-info #bio #left {
-      width: 30%;
-      padding: 0 0.5em;
-      float: left; }
-    #tribute-info #bio #right {
-      width: 70%;
-      padding: 0 1em;
-      border-left: 3px solid #f0f0f0;
-      text-align: justify;
-      float: left; }
-    #tribute-info #bio:after, #tribute-info #bio:before {
-      content: "";
-      display: block; }
-    #tribute-info #bio:after {
-      clear: both; }
-  #tribute-info .col {
+  #tribute-info #bibliography .col {
     width: 33%;
     padding: 1em;
     float: left; }
-    #tribute-info .col ul {
+    #tribute-info #bibliography .col ul {
       /* Prevent nested li's from getting messed up */ }
-      #tribute-info .col ul {
+      #tribute-info #bibliography .col ul {
         list-style: none;
         padding-left: 0; }
-      #tribute-info .col ul > li {
+      #tribute-info #bibliography .col ul > li {
         margin-left: 15px; }
-      #tribute-info .col ul > li:before {
+      #tribute-info #bibliography .col ul > li:before {
         content: "--";
         margin-left: -15px; }
-      #tribute-info .col ul li {
+      #tribute-info #bibliography .col ul li {
         line-height: 1.2em; }
-  #tribute-info:after, #tribute-info:before {
+  #tribute-info #bibliography:after, #tribute-info #bibliography:before {
     content: "";
     display: block; }
-  #tribute-info:after {
+  #tribute-info #bibliography:after {
     clear: both; }
 
 footer {
@@ -86,5 +86,21 @@ footer {
   footer img {
     max-width: 1em;
     height: auto; }
+
+@media screen and (max-width: 700px) {
+  main {
+    width: 100%; }
+
+  #tribute-info #bio #left,
+  #tribute-info #bio #right {
+    float: none;
+    width: 100%; }
+  #tribute-info #bio #left {
+    padding-bottom: 1.5em; }
+  #tribute-info #bio #right {
+    border: none; }
+  #tribute-info #bibliography .col {
+    width: 100%;
+    float: none; } }
 
 /*# sourceMappingURL=style.css.map */

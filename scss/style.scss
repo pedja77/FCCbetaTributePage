@@ -76,21 +76,23 @@ h2 {
     @include clrFix;
   }
 
-  .col {
-    width  : 33%;
-    padding: 1em;
-    float  : left;
+  #bibliography {
+    .col {
+      width  : 33%;
+      padding: 1em;
+      float  : left;
 
-    ul {
-      @include replaceBullets( '--');
+      ul {
+        @include replaceBullets( '--');
 
-      li {
-        line-height: 1.2em;
+        li {
+          line-height: 1.2em;
+        }
       }
     }
+    padding-bottom: 3em;
+    @include clrFix;
   }
-  padding-bottom: 3em;
-  @include clrFix;
 }
 
 footer {
@@ -102,5 +104,35 @@ footer {
   img {
     max-width: 1em;
     height   : auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  main {
+    width: 100%;
+  }
+
+  #tribute-info {
+    #bio {
+      #left,
+      #right {
+        float: none;
+        width: 100%;
+      }
+
+      #left {
+        padding-bottom: 1.5em;
+      }
+
+      #right {
+        border: none;
+      }
+    }
+
+    #bibliography {
+      .col {
+        width: 100%;
+        float: none;
+      }
+    }
   }
 }
